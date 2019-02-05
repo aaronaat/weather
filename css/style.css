@@ -16,3 +16,6 @@ body {
 h1 {
   margin-left: 30px;
 }
+.card-img-top {
+  width:75%;
+}
