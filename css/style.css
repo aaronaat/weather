@@ -4,13 +4,14 @@ body {
   font-family:serif, sans-serif;
 }
 .card {
-  border-width: 2px;
+  border-width: 3px;
   border-color: green;
+  margin:4px;
 }
 .btn {
-  float: left;
-  margin-left: -100px;
+  float:right;
   margin-top: -50px;
+  margin-right: 200px;
 }
 h1 {
   margin-left: 30px;
