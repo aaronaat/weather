@@ -10,7 +10,7 @@ body {
 }
 .btn {
   float:right;
-  margin-top: -50px;
+  margin-top: -60px;
   margin-right: 200px;
 }
 h1 {
@@ -18,4 +18,8 @@ h1 {
 }
 .card-img-top {
   width:75%;
+}
+#monday, #tuesday, #wednesday, #thursday, #friday {
+  display:none;
+  color:red;
 }

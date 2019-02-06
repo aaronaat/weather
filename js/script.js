@@ -42,13 +42,21 @@ var days = [monday, tuesday, wednesday, thursday, friday]
 
 $(document).ready(function(){
 
-  $( "#cast" ).click(function() {
+  $("#cast").click(function() {
     days.forEach(function(day){
       day.reset();
       day.ranTemp();
       day.ranPrecip();
       day.ranWind();
       day.setImg();
+    });
+  });
+
+  $("#epicodus").click(function() {
+    days.forEach(function(day){
+      if ((day.temp <= 35) && (day.precip >= 49)) {
+      $("#" + day.day).toggle();
+      };
     });
   });
 
