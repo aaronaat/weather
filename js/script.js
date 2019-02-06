@@ -38,15 +38,18 @@ var tuesday = new Forecast("tuesday");
 var wednesday = new Forecast("wednesday");
 var thursday = new Forecast("thursday");
 var friday = new Forecast("friday");
+var days = [monday, tuesday, wednesday, thursday, friday]
 
 $(document).ready(function(){
 
   $( "#cast" ).click(function() {
-    monday.reset();
-    monday.ranTemp();
-    monday.ranPrecip();
-    monday.ranWind();
-    monday.setImg();
+    days.forEach(function(day){
+      day.reset();
+      day.ranTemp();
+      day.ranPrecip();
+      day.ranWind();
+      day.setImg();
+    });
   });
 
 });
