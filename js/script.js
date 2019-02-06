@@ -44,6 +44,7 @@ $(document).ready(function(){
 
   $("#cast").click(function() {
     days.forEach(function(day){
+      $("#" + day.day).hide();
       day.reset();
       day.ranTemp();
       day.ranPrecip();
